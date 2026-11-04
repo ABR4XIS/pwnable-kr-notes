@@ -1,10 +1,9 @@
-# pwnable.kr — 13문제 풀이 기록
+# pwnable.kr — 12문제 풀이 기록
 
-2026년 2월 9일부터 24일까지 작성한 pwnable.kr 풀이를 공개용으로 다시 정리한 인덱스입니다. 원본 13개 글은 로컬에 백업했으며, 플래그 문자열은 공개하지 않습니다.
+2026년 2월 10일부터 24일까지 작성한 pwnable.kr 12문제 풀이를 공개용으로 다시 정리한 인덱스입니다. 플래그 문자열은 공개하지 않습니다.
 
 | 날짜 | 문제 | 분석한 핵심 | 해결 방법 |
 |---|---|---|---|
-| 02.09 | [fd](notes/fd.md) | 인자로 파일 디스크립터 선택 | 표준 입력이 선택되도록 fd를 계산하고 데이터 전달 |
 | 02.10 | [collision](notes/collision.md) | 5개 정수의 합으로 만든 단순 해시 | 조건을 Z3로 구성해 동일한 합을 갖는 입력 생성 |
 | 02.11 | [bof](notes/bof.md) | `gets` 기반 스택 버퍼 오버플로우 | 버퍼와 key 사이 오프셋을 계산해 key 덮어쓰기 |
 | 02.11 | [passcode](notes/passcode.md) | 잘못된 `scanf` 인자와 스택 재사용 | passcode1을 쓰기 주소로 만들고 `fflush` GOT overwrite |
@@ -25,4 +24,4 @@
 - **horcruxes:** 일곱 함수를 순서대로 호출하는 ROP 체인을 만들고 Python 합계를 C의 signed 32비트 값으로 변환했습니다.
 - **leg:** ARM/Thumb 모드에서 PC가 가리키는 위치와 LR의 반환 주소를 구분해 세 함수의 결과를 계산했습니다.
 
-더 자세한 설명은 [포트폴리오의 13문제 기록](https://abr4xis.github.io/cases/input-rop/)에 정리했습니다.
+더 자세한 설명은 [포트폴리오의 12문제 기록](https://abr4xis.github.io/cases/input-rop/)에 정리했습니다.
