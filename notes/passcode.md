@@ -93,9 +93,11 @@ int main(){
 -> 
 
 이전 스택에서 미리 다음에 선언된 변수의 값을 지정할 수있지 않을까??? 라는 생각이 들었습니다
-> [원문에 포함된 이미지: image.png]
-> [원문에 포함된 이미지: image.png]
-> [원문에 포함된 이미지: image.png]
+![welcome 함수에서 name 버퍼에 입력한 상태](../assets/passcode/stack-1.png)
+
+![welcome 함수가 반환되며 스택 데이터가 남는 과정](../assets/passcode/stack-2.png)
+
+![login 함수가 같은 스택 공간을 재사용하는 상태](../assets/passcode/stack-3.png)
 
 
 이후 각각 오프셋을 계산해보았습니다
